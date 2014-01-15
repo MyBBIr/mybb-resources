@@ -7,14 +7,18 @@
 	<meta name="author" content="MyBB Group" />
 	<meta name="copyright" content="Copyright MyBB Group." />
 	<meta name="description" content="The official documentation for MyBB, a free PHP and MySQL based discussion system." />
-	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen.css" />
+	<link rel="icon" type="image/png" href="http://cdn.my-bb.ir/images/favicon.png"/>
+	<meta name="google-site-verification" content="FP-gMYKLlNeNon3byeR_ReWJT2u8AE7PYWOvr0ktwXg"/>
+	<meta name="Robots" content="index, follow"/>
+	<meta http-equiv="Content-Script-Type" content="text/javascript"/>
+	<link type="text/css" rel="stylesheet" href="http://cdn.my-bb.ir/css/css.css"/>
 	<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/main.css" />
 	<link rel="stylesheet" type="text/css" href="{{ site.url }}/css/browserdefaults_compact.css" />
 	<!--[if lt IE 8]>
 	<link rel="stylesheet" type="text/css" href="http://mybb.com/assets/screen_ie.css?zz" />
 	<![endif]-->
 
-	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="http://cdn.my-bb.ir/images/jquery.min.js"></script>
 	<script type="text/javascript" src="{{ site.url }}/scripts/docs.js"></script>
 	<!--[if lt IE 7]>
 	<script defer type="text/javascript" src="http://mybb.com/assets/pngfix.js"></script>
@@ -22,41 +26,29 @@
 	<style type="text/css">body{margin-top:0!important;padding-top:0!important;min-width:800px!important;}#wm-ipp a:hover{text-decoration:underline!important;}</style>
 </head>
 <body>
-	<div id="shadow">
-		<div id="container">
-			<!--search:no_index-->
-			<div id="header">
-			<a class="link" href="/"></a>
-				<div id="search">
-					<form method="get" action="http://www.google.com/search">
-						<fieldset>
-							<input type="hidden" name="as_sitesearch" id="as_sitesearch" value="docs.mybb.com">
-							<label for="search_box"><span id="search_left">&nbsp;</span></label>
-							<input type="text" name="q" id="search_box" title="Enter your search keywords" autosave="mybbdocs" />
-							<input type="submit" value="Search" name="submit-search" id="search_button" />
-						</fieldset>
-					</form>
-				</div>
-				
-				<div id="menu">
-				<ul>
-					<li class="default"><a href="http://www.mybb.com/">Home</a></li>
-					<li class="default"><a href="http://www.mybb.com/about">About</a></li>
-					<li class="default"><a href="http://www.mybb.com/features">Features</a></li>
-					<li class="default"><a href="http://www.mybb.com/downloads">Downloads</a></li>
-					<li class="default"><a href="http://community.mybb.com/">Community Forum</a></li>
-					<li class="default"><a href="http://www.mybb.com/get-involved">Get Involved</a></li>
-					<li class="default"><a href="http://mods.mybb.com/">Mods</a></li>
-					<li class="active"><a href="http://docs.mybb.com/">Docs</a></li>
-					<li class="default"><a href="http://blog.mybb.com/">Blog</a></li>
-
-				</ul>
-				</div>
-			</div>
-			
-			
-			<!--/search:no_index-->
-			<div id="content">
+<div id="topmenu" style="height:35px">
+<div class="logo"><a href="http://my-bb.ir/index.php" title="مرجع فارسی مای‌بی‌بی"><img src="http://cdn.my-bb.ir/images/logo.png" alt="پشتیبانی مای بی بی MyBB , پلاگین , قالب" title="پشتیبانی مای بی بی MyBB , پلاگین , قالب" width="130" height="30"/></a></div>
+</div>
+<ul class="menu">
+<li><a href="http://my-bb.ir" title="سردر پشتیبانی">سردر</a>
+<li><a href="http://my-bb.ir/index.php" title="لیست انجمن ها و اطلاع از آخرین ارسال های انجمن">صفحه اصلی</a></li>
+<li><a href="http://blog.my-bb.ir" title="وبلاگ پشتیبانی مای بی بی در ایران برای اطلاع از بروزرسانی ها و نسخه های جدید مای بی بی">وبلاگ</a></li>
+<li><a href="http://transfer.my-bb.ir/" title="در صورتی که اینترنت پر سرعت برای نصب سریع سیستم مای بی بی ندارید یا وقت این کار را ندارید می توانید از این قسمت با وارد کردن اطلاعات FTP مای بی بی را به سرعت آپلود کنید.">آپلود سریع</a></li>
+<li><a href="http://download.my-bb.ir/" title="دریافت آخرین نسخه انجمن ساز مای بی بی">دریافت نسخه</a></li>
+<li><a href="http://variables.my-bb.ir/" title="بانک متغیرهای مای بی بی">بانک متغیر ها</a></li>
+</ul>
+<hr class="hidden"/>
+<br class="clear"/>
+<div id="container">
+<div id="content">
+<div class="logo printbox"><a href="http://my-bb.ir/index.php"><img src="http://cdn.my-bb.ir/images/logo.png" alt="پشتیبانی مای بی بی MyBB , پلاگین , قالب" title="پشتیبانی مای بی بی MyBB , پلاگین , قالب" width="130" height="30"/></a></div>
+<br/>
+<img src="http://cdn.my-bb.ir/images/download.png" usemap="#mybbdownlad" id="download" alt="دریافت آخرین نسخه‌ی مای‌بی‌بی" title="کلیک کنید" width="226" height="100"/>
+<map name="mybbdownlad" id="mybbdownlad">
+<area shape="rect" coords="226,0,184,100" alt="Full" href="javascript:mybbirdownload();" id="dlbtn"/>
+<area shape="rect" coords="0,11,183,47" alt="Full" href="http://download.my-bb.ir/last"/>
+<area shape="rect" coords="0,52,183,88" alt="Lang" href="http://download.my-bb.ir/persian"/>
+</map>
 				<div id="bodyContent">
 					<div id="sidebar">
 						<div class="item">
@@ -83,34 +75,64 @@
 						{{ content }}
 					</div>
 				</div>
-			</div>
-		</div>
-		
-		<div id="footer">
-				<script type="text/javascript" src="http://mybb.com/footer_credit.js"></script>
-				<p>Copyright &copy; 2010 MyBB Group. All rights reserved.</p>
-				<p><a href="/contact">Contact</a> MyBB Group &mdash; <em>for support with MyBB, visit <a href="/support">support</a></em></p><br />
-			</div>
-		</div>  
-	</div>
-	
-	<div id="shadow_footer"></div>
-
-	<script type="text/javascript">
-
-	  var _gaq = _gaq || [];
-	  _gaq.push(['_setAccount', 'UA-11443733-2']);
-	  _gaq.push(['_setDomainName', 'none']);
-	  _gaq.push(['_setAllowLinker', true]);
-	  _gaq.push(['_trackPageview']);
-
-	  (function() {
-		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-	  })();
-
-	</script>
+</div></div>
+<br class="clear"/>
+<div class="footer">
+<div class="mybbirfootertopbar">&nbsp;</div>
+<div class="fheader fheader_right">
+<div class="fheader_left">
+قدرت گرفته از <a href="http://wp-persian.com" target="_blank">وردپرس فارسی</a>
+</div>
+<a href="http://my-bb.ir" class="li" title="وبسایت اصلی">انجمن پشتیبانی</a>
+<a href="http://blog.my-bb.ir" class="li" title="وبلاگ برای اطلاع از آخرین اخبار و نسخه های جدید">وبلاگ پشتیبانی</a>
+<a href="http://download.my-bb.ir" class="li" title="دریافت آخرین نسخه ی مای بی بی">دریافت آخرین نسخه</a>
+<a href="http://my-bb.ir/archive/" class="li" title="نسخه‌ی آرشیو">نسخه‌ی آرشیو</a>
+</div>
+<div class="fcontent">
+<div class="float_right" style="width:400px;margin-left:20px;">
+<div class="footertitle">درباره‌ی ما</div>
+</div>
+<div class="float_right" style="width:200px">
+<div class="footertitle">محبوب‌ترین‌ها</div>
+</div>
+<br class="clear"/>
+<div class="float_right" style="width:400px;margin-left:20px;">
+<div class="footercontent">
+گروه پشتیبانی فارسی مای بی بی My-BB.Ir در واپسین روزهای پاییز 1391 کار خود را در زمینه مای بی بی آغاز کرد. این گروه با توکل بر خدای منان و دانش فنی خود در تلاش است فعالیتی هرچند ناچیز در زمینه ارتقا و پشتیبانی مای بی بی انجام دهد.
+</div>
+<div class="designby">
+طراحی و توسعه توسط: <a href="http://my-bb.ir" target="_blank">گروه مای‌بی‌بی فارسی</a> - طرح بر اساس
+<a href="http://google.com" target="_blank" style="font-size:14px;font-family:Catull,Tahoma;">
+<span style="color:#156aeb">G</span><span style="color:#d3402b">o</span><span style="color:#ffba02">o</span><span style="color:#2073f0">g</span><span style="color:#03a15c">l</span><span style="color:#db4632">e</span>
+</a>
+</div>
+</div>
+<div class="float_right" style="width:200px;padding-top:10px;">
+<a href="http://my-bb.ir/Thread-پیشرفته-ترین-ادیتور-برای-MyBB" title="ویرایشگر پیشرفته‌ی CKEditor"><img src="http://cdn.my-bb.ir/images/best_1.png" alt="محبوب ترین ها" class="best" title="ویرایشگر پیشرفته‌ی CKEditor" width="32" height="32"/></a>
+<a href="http://my-bb.ir/Thread-پوسته-زیبای-MultiColors" title="پوسته‌ی پیشرفته‌ی مولتی کالرز"><img src="http://cdn.my-bb.ir/images/best_2.png" alt="محبوب ترین ها" class="best" title="پوسته‌ی پیشرفته‌ی مولتی کالرز" width="32" height="32"/></a>
+<a href="http://my-bb.ir/Thread-پوسته-ویژه-مای-بی-بی-پــــرو" title="پوسته‌ی پیشرفته‌ی مای بی بی پــرو"><img src="http://cdn.my-bb.ir/images/best_4.png" alt="محبوب ترین ها" class="best" title="پوسته‌ی پیشرفته‌ی مای بی بی پــرو" width="32" height="32"/></a>
+<a href="http://my-bb.ir/Thread-پلاگین-سیستم-مدال-دهی-پیشرفته-myawards-برای-سیستم-مای-بی-بی" title="سیستم مدال‌دهی پیشرفته"><img src="http://cdn.my-bb.ir/images/best_3.png" alt="محبوب ترین ها" class="best" title="سیستم مدال‌دهی پیشرفته" width="32" height="32"/></a>
+<a href="http://my-bb.ir/Thread-آموزش-نصب-پلاگین-گوگل-سئو-Google-Seo" title=""><img src="http://cdn.my-bb.ir/images/best_5.png" alt="Bests" class="best" title="" width="32" height="32"/></a>
+<br/>
+<a href="http://my-bb.ir/Thread-پلاگین-چت-روم-myshoutbox-برای-سیستم-مای-بی-بی" title=""><img src="http://cdn.my-bb.ir/images/best_6.png" alt="Bests" class="best" title="" width="32" height="32"/></a>
+<a href="http://my-bb.ir/Thread-محصول-پشتیبانی-My-BB-Ir-پلاگین-سیستم-تبلیغات" title=""><img src="http://cdn.my-bb.ir/images/best_7.png" alt="Bests" class="best" title="" width="32" height="32"/></a>
+<a href="http://my-bb.ir/Thread-پوسته-زیبای-MyBBGreen" title=""><img src="http://cdn.my-bb.ir/images/best_8.png" alt="Bests" class="best" title="" width="32" height="32"/></a>
+<a href="http://my-bb.ir/Thread-پوسته-ویژه-MyWave" title=""><img src="http://cdn.my-bb.ir/images/best_9.png" alt="Bests" class="best" title="" width="32" height="32"/></a>
+<a href="http://my-bb.ir/Thread-پلاگین-کلمات-کلیدی" title=""><img src="http://cdn.my-bb.ir/images/best_10.png" alt="Bests" class="best" title="" width="32" height="32"/></a>
+</div>
+<br class="clear"/><hr class="hidden"/>
+</div>
+<img class="iraniancan" src="http://cdn.my-bb.ir/images/iraniancan.png" alt="ایرانی می‌تواند"/>
+<div class="networks">
+<a href="#"><img src="http://cdn.my-bb.ir/images/s_1.png" alt="NetWorks"/></a>
+<a target="_blank" href="http://facebook.com/MyBBIr"><img src="http://cdn.my-bb.ir/images/s_2.png" alt="NetWorks"/></a>
+<a target="_blank" href="http://twitter.com/MyBBIr"><img src="http://cdn.my-bb.ir/images/s_3.png" alt="NetWorks"/></a>
+<a target="_blank" href="http://plus.google.com/+MyBBIrGroup"><img src="http://cdn.my-bb.ir/images/s_4.png" alt="NetWorks"/></a>
+<a target="_blank" href="http://my-bb.ir/syndication.php"><img src="http://cdn.my-bb.ir/images/s_5.png" alt="NetWorks"/></a>
+</div>
+<div class="ffoot">
+</div>
+</div>
 </body>
 </html>
 
