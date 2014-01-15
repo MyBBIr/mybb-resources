@@ -338,6 +338,8 @@ pre {
 	font-family: Monaco, Consolas, Courier, monospace;
         font-size: 1.0em;
 	word-wrap: break-word;
+	text-align:left;
+	direction:ltr;
 	}
 tt {
 	font-size: 1.1em;
