@@ -1,4 +1,3 @@
-
 .mastHead {
 	margin: 0;
 }
@@ -453,4 +452,74 @@ tt {
 
 #ca-history a {
 	background: url(../images/template/icons/history.gif) no-repeat 3px;
+}
+
+/*
+ * Left Sidebar
+ */ 
+div#sidebar {
+  float: left;
+  width: 21.5%;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sidebar Item */
+div#sidebar div.item {
+  margin: 0;
+  margin-top: 10px;
+  background: #fff; /* sidebar item background */
+	border: 3px solid #ccc;
+  padding: 10px;
+	padding-top: 1px;
+}
+
+div#sidebar hr {
+  border: 0px;
+}
+
+/* Corners */
+div.sidebar_top,
+div.sidebar_top div.right,
+div.sidebar_bottom,
+div.sidebar_bottom div.right {
+	height: 10px;
+}
+
+div.sidebar_top {
+	background: url(images/sidebar_left.png) no-repeat;
+	margin: -2px -11px;
+}
+
+div.sidebar_top div.right {
+	background: url(images/sidebar_right.png) 100% 0 no-repeat;
+}
+
+div.sidebar_bottom {
+	background: url(images/sidebar_left.png) 0 100% no-repeat;
+	margin: 2px -11px -11px -11px;
+}
+
+div.sidebar_bottom div.right {
+	background: url(images/sidebar_right.png) 100% 100% no-repeat;
+}
+ 
+/* Sidebar Item Text: Paragraph */
+div#sidebar p {
+  margin: 0;
+  margin-left: 8px;
+}
+
+/* Sidebar Item Text: List (Container) */
+div#sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Sidebar Item Text: List (Item)*/
+div#sidebar ul li {
+  margin: 0;
+  padding: 0;
+  margin-left: 8px;
 }
