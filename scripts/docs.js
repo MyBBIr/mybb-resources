@@ -1,3 +1,4 @@
+$.noConflict();
 $(function() {
 	$('.docs_subcat').hide();
 	$('.docs_categories li a').on('click', function(event) {
