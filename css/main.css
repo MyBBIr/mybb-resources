@@ -1001,7 +1001,7 @@ color: #999;
 table.diff {background: #FEFEFE; border: 1px solid #cccccc; padding: 0.5em}
 table.diff td {vertical-align: top;}
 td.diff-otitle a, td.diff-ntitle a, td.diff-otitle a:visited, td.diff-ntitle a:visited {color: #2153B0;}
-td.diff-otitle a:hover, td.diff-ntitle a:hover {text-decoration: underline;}
+td.diff-otitle a:hover, td.diff-ntitle a:hover {text-decoration: none;}
 td.diff-otitle {}
 td.diff-ntitle {}
 td.diff-addedline {background:#F2F6FF;}
