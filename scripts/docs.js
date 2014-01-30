@@ -1,3 +1,4 @@
+var siteurl = 'http://my-bb.ir';
 jQuery(function($) {
 	$('.docs_subcat').hide();
 	$('.docs_categories li a').on('click', function(event) {
