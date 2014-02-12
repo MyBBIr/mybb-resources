@@ -12,6 +12,10 @@ div#container {
   height: auto;
 }
 
+a:hover {
+	text-decoration:none!important;
+}
+
 
 /* Content Area */
 #container #content {
@@ -825,13 +829,13 @@ h1, h2, h3, h4, h5 {
 }
 
 #bodyContent h3 {
-	font-family: 'Trebuchet MS', Verdana, Sans-Serif;
+	font-family: BKoodakBold, Tahoma, 'Trebuchet MS', Verdana, Sans-Serif;
 	color: #000;
 	font-size: 1em;
 }
 
 #bodyContent h4 {
-	font-family: 'Trebuchet MS', Verdana, Sans-Serif;
+	font-family: BKoodakBold, Tahoma, 'Trebuchet MS', Verdana, Sans-Serif;
 	color: #03558A;
 	font-size: 1em;
 }
@@ -1123,7 +1127,7 @@ div.tleft {
     display: none;
 }
 img.tex { vertical-align: middle; }
-span.texhtml { font-family: serif; }
+span.texhtml { font-family: Tahoma, serif; }
 
 #bodyContent img {
 	border: 0px solid #333;
