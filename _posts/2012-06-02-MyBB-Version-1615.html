@@ -1,7 +1,7 @@
 ---
 layout: post
-title: MyBB 1.6.14
-permalink: 1614.html
+title: MyBB 1.6.15
+permalink: 1615.html
 category: نسخه‌ها
 ---
 
@@ -21,71 +21,58 @@ category: نسخه‌ها
 </td></tr></table>
 
 <h1><span class="mw-headline" id="Release_Date">Release Date</span></h1>
-<p>MyBB 1.6.14 was released on 30 June 2014.
+<p>MyBB 1.6.15 was released on 4 August 2014.
 </p>
 
 <h1><span class="mw-headline" id="Announcement_Summary">Announcement Summary</span></h1>
 <h2><span class="mw-headline" id="Overview">Overview</span></h2>
-<p>MyBB 1.6.14 is a security and maintenance release and fixes 5 vulnerabilities and 50 reported issues.
+<p>MyBB 1.6.15 is a security and maintenance release and fixes 1 vulnerabilities and 26 reported issues.
 </p>
 
 <h2><span class="mw-headline" id="Fixed_Issues">Fixed Issues</span></h2>
 <ul><li>Vulnerabilities:<ul>
-<li>Medium Risk: Possibility of executing PHP code through settings</li>
-<li>Low Risk: A XSS vulnerability in polls.php</li>
-<li>Low Risk: A XSS vulnerability in portal.php</li>
-<li>Low Risk: Password protected forums can be viewed from the portal</li>
-<li>Low Risk: Super moderators have more permissions than expected</li>
+<li>Medium Risk: A XSS vulnerability in video MyCode</li>
 </ul>
 </li>
-<li><a href="https://github.com/mybb/mybb/issues?milestone=1&amp;state=closed">Fixed issues in 1.6.14</a></li>
-<li><a href="https://github.com/mybb/mybb/issues?labels=1.6&amp;state=open">Unfixed issues</a></li>
+<li><a href="https://github.com/mybb/mybb/issues?milestone=5&amp;state=closed">Fixed issues in 1.6.15</a></li>
 </ul>
 
 <h2><span class="mw-headline" id="Changed_Files">Changed Files</span></h2>
-<p>The following files have changed since MyBB 1.6.13.
+<p>The following files have changed since MyBB 1.6.15.
 </p>
 <ul>
 <li>admin
 <ul>
 <li>inc
 <ul>
-<li>functions_view_manager.php</li>
+<li>functions.php</li>
+<li>functions_theme.php</li>
 </ul>
 </li>
 <li>modules
 <ul>
 <li>config
 <ul>
-<li>profile_fields.php</li>
-<li>settings.php</li>
+<li>mod_tools.php</li>
+<li>plugins.php</li>
+<li>smilies.php</li>
 </ul>
 </li>
 <li>forum
 <ul>
-<li>attachments.php</li>
 <li>management.php</li>
 </ul>
 </li>
-<li>style
-<ul>
-<li>themes.php</li>
-</ul>
 </li>
 <li>tools
 <ul>
 <li>adminlog.php</li>
-<li>backupdb.php</li>
+<li>maillogs.php</li>
 <li>modlog.php</li>
-<li>recount_rebuild.php</li>
 </ul>
 </li>
 <li>user
 <ul>
-<li>admin_permissions.php</li>
-<li>groups.php</li>
-<li>mass_mail.php</li>
-<li>titles.php</li>
 <li>users.php</li>
 </ul>
 </li>
@@ -94,11 +81,16 @@ category: نسخه‌ها
 <li>index.php</li>
 </ul>
 </li>
+<li>archive
+<ul>
+<li>index.php</li>
+</ul>
+</li>
 <li>inc
 <ul>
 <li>datahandlers
 <ul>
-<li>user.php</li>
+<li>post.php</li>
 </ul>
 </li>
 <li>languages
@@ -107,97 +99,61 @@ category: نسخه‌ها
 <ul>
 <li>admin
 <ul>
-<li>forum_attachments.lang.php</li>
+<li>config_smilies.lang.php</li>
 <li>forum_management.lang.php</li>
-<li>tools_adminlog.lang.php</li>
-<li>tools_modlog.lang.php</li>
-<li>user_mass_mail.lang.php</li>
-<li>user_titles.lang.php</li>
 </ul>
 </li>
-<li>messages.lang.php</li>
-<li>modcp.lang.php</li>
-<li>polls.lang.php</li>
-<li>showthread.lang.php</li>
+<li>datahandler_post.lang.php</li>
+<li>member.lang.php</li>
+<li>warnings.lang.php</li>
 </ul>
 </li>
 <li>english.php</li>
 </ul>
 </li>
-<li>mailhandlers
-<ul>
-<li>smtp.php</li>
-</ul>
-</li>
 <li>tasks
 <ul>
-<li>promotions.php</li>
-<li>userpruning.php</li>
+<li>massmail.php</li>
 </ul>
 </li>
 <li>class_core.php</li>
-<li>class_language.php</li>
 <li>class_moderation.php</li>
 <li>class_parser.php</li>
 <li>class_session.php</li>
+<li>db_mysql.php</li>
+<li>db_mysqli.php</li>
+<li>db_pgsql.php</li>
 <li>functions.php</li>
+<li>functions_archive.php</li>
+<li>functions_post.php</li>
 <li>functions_search.php</li>
-<li>functions_upload.php</li>
+<li>functions_user.php</li>
 </ul>
 </li>
-<li>install
-<ul>
-<li>resources
-<ul>
-<li>language.lang.php</li>
-<li>mybb_theme.xml</li>
-<li>upgrade29.php</li>
-</ul>
-</li>
-<li>upgrade.php</li>
-</ul>
-</li>
-<li>jscripts
-<ul>
-<li>inline_moderation.js</li>
-<li>validator.js</li>
-</ul>
-</li>
-<li>calendar.php</li>
-<li>editpost.php</li>
+<li>captcha.php</li>
 <li>forumdisplay.php</li>
+<li>global.php</li>
 <li>member.php</li>
 <li>modcp.php</li>
 <li>newreply.php</li>
 <li>newthread.php</li>
-<li>polls.php</li>
-<li>portal.php</li>
-<li>reputation.php</li>
+<li>online.php</li>
+<li>printthread.php</li>
+<li>private.php</li>
 <li>search.php</li>
 <li>showthread.php</li>
-<li>syndication.php</li>
-<li>task.php</li>
 <li>usercp.php</li>
+<li>warnings.php</li>
+<li>xmlthttp.php</li>
 </ul>
 
 <h2><span class="mw-headline" id="Language_Changes">Language Changes</span></h2>
-<p>There are changes to 10 language files. Changed languages files can be cross-referenced from the list above.
+<p>There are changes to 5 language files. Changed languages files can be cross-referenced from the list above.
 </p>
 
 <h2><span class="mw-headline" id="Template_Changes">Template Changes</span></h2>
-<p>There are changes to 9 templates.
+<p>There are no changes to templates.
 </p>
-<ul>
-<li>forumdisplay_inlinemoderation</li>
-<li>member_register</li>
-<li>modcp_ipsearch_misc_info</li>
-<li>modcp_modqueue_attachments_attachment</li>
-<li>post_attachments_add</li>
-<li>post_attachments_new</li>
-<li>search_results_posts_inlinemoderation</li>
-<li>search_results_threads_inlinemoderation</li>
-<li>showthread_inlinemoderation</li>
-</ul>
 
 <p><br />
 </p>
